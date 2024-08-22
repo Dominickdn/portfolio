@@ -9,7 +9,7 @@ function Experience() {
           </div>
           <div className="flex justify-center lg:w-3/5 md:w-9/12 sm:w-8/12 p-4">
             <div className="flex flex-col border-pink-200 border-2 rounded-2xl w-full bg-stone-900"> 
-              <div className="flex p-10 font-semibold text-md">
+              <div className="flex p-10 font-semibold text-lg">
                 <p>Junior Software Engineer at Webill |June-2023 July-2024</p>
               </div>
               <div className="flex px-10 font-medium text-md ">
