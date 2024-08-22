@@ -12,7 +12,7 @@ function App () {
   return (
     <>
       <BrowserRouter>
-        <main className="w-screen">
+        <main className="w-screen bg_color">
           <Links/>
           <Hero/>
           <div className="flex justify-center"><div className="flex justify-self-center items-center border-b-2 w-1/2"></div></div>
