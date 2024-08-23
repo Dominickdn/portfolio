@@ -11,7 +11,7 @@ const Computers = ({ isMobile }) => {
   
   useFrame(() => {
     if (modelRef.current) {
-      modelRef.current.rotation.y += 0.001; 
+      modelRef.current.rotation.y += 0.003; 
     }
   });
 
