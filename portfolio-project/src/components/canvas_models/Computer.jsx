@@ -1,14 +1,20 @@
-
-
-import { Suspense, useEffect, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
+import { Suspense, useEffect, useState, useRef } from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
 const Computers = ({ isMobile }) => {
   const model = useGLTF('./retro_computer.glb');
+  const modelRef = useRef();
+
   
+  useFrame(() => {
+    if (modelRef.current) {
+      modelRef.current.rotation.y += 0.001; 
+    }
+  });
+
   return (
     <mesh>
       <ambientLight intensity={0.1} />
@@ -16,6 +22,7 @@ const Computers = ({ isMobile }) => {
       <pointLight position={[10, 5, 10]} intensity={0.5}/>
       <spotLight position={[0, 50, 10]} intensity={2}/>
       <primitive
+        ref={modelRef}
         object={model.scene}
         scale={isMobile ? 7.8 : 7.8}
         position={isMobile ? [0, -2.8, 0] : [0, -2.8 , 0]}
@@ -29,7 +36,6 @@ const Computer = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-
     const mediaQuery = window.matchMedia("(max-width: 500px)");
 
     setIsMobile(mediaQuery.matches);
@@ -47,7 +53,6 @@ const Computer = () => {
 
   return (
     <Canvas
-      frameloop="demand"
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
@@ -66,4 +71,4 @@ const Computer = () => {
   )
 }
 
-export default Computer
+export default Computer;
