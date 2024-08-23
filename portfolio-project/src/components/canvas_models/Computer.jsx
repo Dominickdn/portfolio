@@ -4,14 +4,15 @@ import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
 
 import CanvasLoader from '../Loader';
 
-const Computers = ({ isMobile }) => {
+  //load model
+const Computers = ({ isMobile, spinning }) => {
   const model = useGLTF('./retro_computer.glb');
   const modelRef = useRef();
 
-  
+  // Rotate 
   useFrame(() => {
-    if (modelRef.current) {
-      modelRef.current.rotation.y += 0.003; 
+    if (modelRef.current && spinning) {
+      isMobile ? modelRef.current.rotation.y += 0.004 : modelRef.current.rotation.y += 0.002; // Speed of rotation
     }
   });
 
@@ -24,16 +25,17 @@ const Computers = ({ isMobile }) => {
       <primitive
         ref={modelRef}
         object={model.scene}
-        scale={isMobile ? 7.8 : 7.8}
-        position={isMobile ? [0, -2.8, 0] : [0, -2.8 , 0]}
+        scale={isMobile ? 10 : 8.5}
+        position={isMobile ? [0, -3.5, 0] : [0, -3.5 , 0]}
         rotation={[0.0, 0.8, 0.0]}
       />
     </mesh>
-  )
+  );
 }
 
 const Computer = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [spinning, setSpinning] = useState(true);
 
   useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width: 500px)");
@@ -51,24 +53,32 @@ const Computer = () => {
     };
   }, []);
 
-  return (
-    <Canvas
-      shadows
-      camera={{ position: [20, 3, 5], fov: 25 }}
-      gl={{ preserveDrawingBuffer: true }}
-    >
-      <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        />
-        <Computers isMobile={isMobile}/>
-      </Suspense>
+  const handleSpinToggle = () => {
+    setSpinning(prevSpinning => !prevSpinning);
+  };
 
-      <Preload all />
-    </Canvas>
-  )
+  return (
+     <>
+     <div className="flex flex-col w-full h-5/6 items-center">
+      <Canvas
+        shadows
+        camera={{ position: [20, 3, 5], fov: 25 }}
+        gl={{ preserveDrawingBuffer: true }}
+        onClick={handleSpinToggle}
+      >
+        <Suspense fallback={<CanvasLoader />}>
+          <OrbitControls
+            enableZoom={false}
+            maxPolarAngle={Math.PI / 2}
+            minPolarAngle={Math.PI / 2}
+          />
+          <Computers isMobile={isMobile} spinning={spinning}/>
+        </Suspense>
+        <Preload all />
+      </Canvas>
+      </div>
+      </>
+  );
 }
 
 export default Computer;
