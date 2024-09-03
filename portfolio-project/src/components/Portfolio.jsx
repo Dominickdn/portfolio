@@ -59,7 +59,7 @@ function Portfolio() {
                 </div>
 
               <div className="flex flex-col lg:flex-row w-full"> 
-                <div className="flex justify-center items-start font-medium text-md w-full lg:w-1/2 lg:pt-10 md: sm:2">
+              <div className="flex justify-center items-start font-medium text-md w-full lg:w-1/2 lg:pt-10 md: sm:2 pb-10">
                   <img className="w-80 h-80 object-cover border-pink-200 border-2 rounded-2xl " src="/pointer.jpg" alt="Pointer Lock controller" />
                 </div>
                 <div className="flex-1 flex flex-col justify-center px-10 text-md pb-10 pt-2">
