@@ -105,7 +105,7 @@ function Portfolio() {
 
                     
                     <br />
-                    <a href="https://singular-basbousa-d01561.netlify.app" target="_blank">Project hosted here(Desktop Recommended)</a>
+                    <a href="https://plane-game-qyq4hm9hr-dominicks-projects-2913cbf2.vercel.app" target="_blank">Project hosted here(Desktop Recommended)</a>
                   </p>
                   
                 </div>
