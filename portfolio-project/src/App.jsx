@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Hero from "./components/Hero";
 import Links from "./components/Links";
+import { Analytics } from "@vercel/analytics/react";
 
 function App () {
 
@@ -19,6 +20,7 @@ function App () {
           <Experience/>
           <Portfolio/>
           <Contact/>
+          <Analytics />
         </main>
         </BrowserRouter>
     </>
