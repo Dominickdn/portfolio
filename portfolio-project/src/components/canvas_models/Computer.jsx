@@ -12,7 +12,7 @@ const Computers = ({ isMobile, spinning }) => {
   // Rotate 
   useFrame(() => {
     if (modelRef.current && spinning) {
-      isMobile ? modelRef.current.rotation.y += 0.003 : modelRef.current.rotation.y += 0.002; // Speed of rotation
+      isMobile ? modelRef.current.rotation.y += 0.004 : modelRef.current.rotation.y += 0.002; // Speed of rotation
     }
   });
 

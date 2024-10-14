@@ -1,4 +1,4 @@
-import { Github, Linkedin } from "lucide-react"
+import { FileDown, Github, Linkedin } from "lucide-react"
 
 const Links = () => {
 
@@ -23,6 +23,11 @@ return (
                     <div className="flex items-center justify-center p-5 ">
                         <a href="https://github.com/Dominickdn" target="_blank">
                             <Github width={38} height={38}/>
+                        </a>
+                    </div>
+                    <div className="flex items-center justify-center p-5 ">
+                        <a href="/Resume-Dominick-Das-Neves (updated).pdf" target="_blank">
+                            <FileDown width={38} height={38}/>
                         </a>
                     </div>
             

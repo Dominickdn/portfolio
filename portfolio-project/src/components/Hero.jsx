@@ -14,13 +14,13 @@ const Hero = () => {
 //   }
 return (
   <>
-    <section className="lg:flex flex-col w-full custom-font hidden">
+    <section className="lg:flex flex-col w-full custom-font hidden ">
           <div className="flex-1 flex items-center justify-center">
               <div className="items-start max-w-4xl pr-32">
                 <h1 className="text-6xl text-inner-shadow py-2">Hi, I'm</h1>
                 <h1 className="text-6xl text-inner-shadow py-2">Dominick.</h1>
               </div>
-            <div className="text-start h-96 pl-32">
+            <div className="text-start h-96 pl-32 cursor-pointer hover:cursor-grabbing">
               <Computer/>
             </div>
           </div>
@@ -47,14 +47,14 @@ return (
           </div> 
       </section>
 
-    <section className="lg:hidden md:flex-row w-full custom-font">
+    <section className="lg:hidden md:flex-row w-full custom-font hover-cursor">
         <div className="flex items-center justify-start pt-5 px-10">
                 <div className="items-start max-w-4xl">
                   <h1 className="text-4xl md:text-5xl text-inner-shadow py-2">Hi, I'm</h1>
                   <h1 className="text-4xl md:text-5xl text-inner-shadow py-2">Dominick.</h1>
                 </div>
         </div>
-        <div className="flex h-80 w-full items-center p-5">
+        <div className="flex h-80 w-full items-center p-5 ">
             <Computer/>
         </div>
         <div className=" flex items-center justify-center p-8 w-full pb-10">
