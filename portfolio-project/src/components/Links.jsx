@@ -25,7 +25,7 @@ return (
                             <Github width={38} height={38}/>
                         </a>
                     </div>
-                    <div className="flex items-center justify-center p-5 ">
+                    <div className="flex items-center justify-center p-5">
                         <a href="/Resume-Dominick-Das-Neves (updated).pdf" target="_blank">
                             <FileDown width={38} height={38}/>
                         </a>

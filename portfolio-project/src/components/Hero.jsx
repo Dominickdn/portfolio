@@ -54,7 +54,7 @@ return (
                   <h1 className="text-4xl md:text-5xl text-inner-shadow py-2">Dominick.</h1>
                 </div>
         </div>
-        <div className="flex h-80 w-full items-center p-5 ">
+        <div className="flex h-80 w-full items-center p-12 ">
             <Computer/>
         </div>
         <div className=" flex items-center justify-center p-8 w-full pb-10">
