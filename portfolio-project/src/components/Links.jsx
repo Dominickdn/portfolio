@@ -21,7 +21,7 @@ return (
                         </a>
                     </div>
                     <div className="flex items-center justify-center p-5 ">
-                        <a href="https://github.com/Dominickdn" target="_blank">
+                        <a href="https://github.com/dominickdn" target="_blank">
                             <Github width={38} height={38}/>
                         </a>
                     </div>

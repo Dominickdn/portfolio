@@ -33,16 +33,16 @@ return (
          
           <div className="flex-1 flex items-center justify-center p-10">
             <div className="text-start max-w-4xl text-xl p-4">
-             <img src='/elixir.svg'/>
+             <img src='/elixir.svg' alt="elixir image"/>
             </div>
             <div className="text-start max-w-4xl text-xl p-4">
-             <img src='/phoenix.svg'/>
+             <img src='/phoenix.svg' alt="phoenix image"/>
             </div>
             <div className="text-start max-w-4xl text-xl p-4">
-             <img src='/next.svg'/>
+             <img src='/next.svg' alt="next image"/>
             </div>
             <div className="text-start max-w-4xl text-xl p-4">
-             <img src='/js.svg'/>
+             <img src='/js.svg' alt="js image"/>
             </div>
           </div> 
       </section>
@@ -65,16 +65,16 @@ return (
 
       <div className="flex-1 flex items-center justify-center p-10">
             <div className="text-start max-w-4xl text-xl p-4">
-             <img src='/elixir.svg'/>
+             <img src='/elixir.svg' alt="elixir image"/>
             </div>
             <div className="text-start max-w-4xl text-xl p-4">
-             <img src='/phoenix.svg'/>
+             <img src='/phoenix.svg' alt="phoenix image"/>
             </div>
             <div className="text-start max-w-4xl text-xl p-4">
-             <img src='/next.svg'/>
+             <img src='/next.svg' alt="next image"/>
             </div>
             <div className="text-start max-w-4xl text-xl p-4">
-             <img src='/js.svg'/>
+             <img src='/js.svg' alt="js image"/>
             </div>
       </div>
     </section>

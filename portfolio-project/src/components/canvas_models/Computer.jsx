@@ -56,6 +56,7 @@ const Computer = () => {
   const handleSpinToggle = () => {
     setSpinning(prevSpinning => !prevSpinning);
   };
+  
 
   return (
      <>

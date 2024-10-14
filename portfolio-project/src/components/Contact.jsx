@@ -34,16 +34,16 @@ import emailjs from 'emailjs-com';
         <>
         <div className="flex-1 flex items-center justify-center p-10">
                 <div className="text-start max-w-4xl text-xl p-4">
-                <img src='/three.svg'/>
+                <img src='/three.svg' alt="next three"/>
                 </div>
                 <div className="text-start max-w-4xl text-xl p-4">
-                <img src='/post.svg'/>
+                <img src='/post.svg' alt="post image"/>
                 </div>
                 <div className="text-start max-w-4xl text-xl p-4">
-                <img src='/react.svg'/>
+                <img src='/react.svg' alt="react image"/>
                 </div>
                 <div className="text-start max-w-4xl text-xl p-4">
-                <img src='/python.svg'/>
+                <img src='/python.svg' alt="python image"/>
                 </div>
           </div>
         <div className="flex justify-center "><div className="flex justify-self-center items-center border-b-2 w-1/2 pt-10"></div></div>
