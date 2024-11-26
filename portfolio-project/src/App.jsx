@@ -12,7 +12,7 @@ function App () {
   return (
     <>
       <BrowserRouter>
-        <main className="w-screen bg_color">
+        <main className="w-full bg_color">
    
           <Links/>
           <Hero/>

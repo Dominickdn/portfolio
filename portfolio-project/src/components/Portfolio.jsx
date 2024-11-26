@@ -32,6 +32,7 @@ function Portfolio() {
 
               </div>
               <div className="flex-1 flex flex-col justify-center px-10 text-md pb-10">
+                <br/>
                   <p>
                     Development Highlights:
                     <br />
@@ -48,6 +49,7 @@ function Portfolio() {
                     Sputnik Wonderwash is an online store built with Next.js and integrated with the Shopify API. 
                     It provides an efficient and engaging shopping experience for premium cleaning products.
                     <br />
+                    <a href="https://sputnikwashingmachine.co.za" target="_blank">Project hosted here(Desktop & Mobile)</a>
                   </p>
                 </div>
 
