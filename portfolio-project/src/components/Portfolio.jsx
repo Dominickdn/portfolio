@@ -11,15 +11,15 @@ function Portfolio() {
           <div className="flex justify-center lg:w-3/5 md:w-9/12 sm:w-8/12 p-4">
             <div className="flex flex-col border-pink-200 border-2 rounded-2xl w-full bg-stone-900"> 
 
-                <div className="flex pt-10 px-5 font-semibold text-lg">
+                <div className="flex pt-10 px-5 font-semibold text-lg pb-5">
                   <p>Projects
                   <br/>
                     1. Sputnik Storefront
                   </p>
                 </div>
 
-              <div className="flex flex-col lg:flex-row w-full"> 
-              <div className="flex justify-center items-start font-medium text-md w-full lg:w-1/2 lg:pt-10 md: sm:2 pb-8">
+              <div className="flex flex-col lg:flex-row w-full pb-6"> 
+               <div className="flex justify-center items-start font-medium text-md w-full lg:w-1/2 lg:pt-10 pb-2 px-8">
                   <img className="w-80 h-80 object-cover border-pink-200 border-2 rounded-2xl " src="/sputnik-des.jpg" alt="Pointer Lock controller" />
                 </div>
                 <div className="flex-1 flex flex-col justify-center px-10 text-md pb-10 pt-2">
@@ -36,14 +36,14 @@ function Portfolio() {
                 </div>
               </div>
 
-              <div className="flex px-5 font-semibold text-lg">
+              <div className="flex px-5 font-semibold text-lg pb-5">
                   <p>
                     2. NISI Storefront
                   </p>
                 </div>
 
-              <div className="flex flex-col lg:flex-row w-full"> 
-              <div className="flex justify-center items-start font-medium text-md w-full lg:w-1/2 lg:pt-10 md: sm:2 pb-8">
+              <div className="flex flex-col lg:flex-row w-full pb-6"> 
+              <div className="flex justify-center items-start font-medium text-md w-full lg:w-1/2 lg:pt-10 px-6">
                   <img className="w-80 h-80 object-cover border-pink-200 border-2 rounded-2xl " src="/NISI.jpg" alt="Nisi" />
                 </div>
                 <div className="flex-1 flex flex-col justify-center px-10 text-md pb-10 pt-2">
@@ -61,14 +61,14 @@ function Portfolio() {
                 </div>
               </div>
 
-              <div className="flex px-5 font-semibold text-lg">
+              <div className="flex px-5 font-semibold text-lg pb-5">
                   <p>
                     2. MDX editor
                   </p>
               </div>
 
-              <div className="flex flex-col lg:flex-row w-full"> 
-              <div className="flex justify-center items-start font-medium text-md w-full lg:w-1/2 lg:pt-10 md: sm:2 pb-8">
+              <div className="flex flex-col lg:flex-row w-full pb-6"> 
+              <div className="flex justify-center items-start font-medium text-md w-full lg:w-1/2 lg:pt-10 px-6">
                   <img className="w-80 h-80 object-cover border-pink-200 border-2 rounded-2xl " src="/mdx.jpg" alt="MDX editor" />
                 </div>
                 <div className="flex-1 flex flex-col justify-center px-10 text-md pb-10 pt-2">
